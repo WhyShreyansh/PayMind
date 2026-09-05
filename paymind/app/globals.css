@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+:root {
+  --paper: #faf9f6;
+  --surface: #ffffff;
+  --ink: #14171a;
+  --ink-soft: #5b6169;
+  --ink-faint: #8b9096;
+  --border: #e4e2dd;
+  --border-soft: #edece8;
+
+  --brand: #1b4b43;
+  --brand-soft: #e7f0ec;
+  --brand-strong: #0f332d;
+
+  --amber: #b45309;
+  --amber-soft: #fdf1e1;
+
+  --red: #b42318;
+  --red-soft: #fbeae9;
+
+  --sidebar-bg: #14171a;
+  --sidebar-text: #d7dadd;
+  --sidebar-text-muted: #868c93;
+  --sidebar-active: #1e2226;
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-surface: var(--surface);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-ink-faint: var(--ink-faint);
+  --color-border: var(--border);
+  --color-border-soft: var(--border-soft);
+  --color-brand: var(--brand);
+  --color-brand-soft: var(--brand-soft);
+  --color-brand-strong: var(--brand-strong);
+  --color-amber: var(--amber);
+  --color-amber-soft: var(--amber-soft);
+  --color-red: var(--red);
+  --color-red-soft: var(--red-soft);
+  --color-sidebar-bg: var(--sidebar-bg);
+  --color-sidebar-text: var(--sidebar-text);
+  --color-sidebar-text-muted: var(--sidebar-text-muted);
+  --color-sidebar-active: var(--sidebar-active);
+
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto,
+    Helvetica, Arial, sans-serif;
+  --font-serif: ui-serif, Georgia, "Iowan Old Style", "Times New Roman", serif;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.font-serif-display {
+  font-family: var(--font-serif);
+  font-feature-settings: "tnum" 1, "lnum" 1;
+  font-variant-numeric: tabular-nums lining-nums;
+}
+
